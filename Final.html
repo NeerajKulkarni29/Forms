@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="Data.js"></script>
+</head>
+<body>
+    <div>
+        
+        <center>
+            <h1>Your Email is:</h1><h2 id = "Aemail"></h2>
+            <h1>Your Password is:</h1><h2 id = "Apassword"></h2>
+        </center>
+    </div>
+    <script>
+        //alert(localStorage.getItem("emailKey"));
+       // document.getElementById("email").innerHTML = localStorage.getItem("emailKey");
+        //document.getElementById("password").innerHTML = localStorage.getItem("pwdKey");
+        document.getElementById("Aemail").innerHTML = localStorage.getItem("AemailKey");
+        document.getElementById("Apassword").innerHTML = localStorage.getItem("ApwdKey");
+    </script>
+    
+    <center>
+        <form method="GET" action="Success.html">
+            <input type="submit" value="Confirm">
+        </form>
+        <form method="GET" action="MyFirst.html">
+            <input type="submit" value="Incorrect details" onclick="Return()">
+        </form>
+    </center>
+</body>
+</html>

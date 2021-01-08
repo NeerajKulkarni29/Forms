@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<title>Registration</title>
+<head>
+    <center>
+        <h1>Registration</h1><hr><br><br>
+    </center>
+    <script>
+        function submitData(){
+            let email = document.getElementById("Remail").value;
+            
+            let password = document.getElementById("Rpwd").value;
+            localStorage.setItem("emailKey",email);
+            localStorage.setItem("pwdKey",password);
+        }
+        
+    </script>
+</head>
+
+<body>
+    <center>
+        <form method="GET" action="ApplicationForm.html">
+            <label>Email:</label>
+            <input type="email" placeholder="Enter your email" id="Remail"><br><br>
+            <label>Password:</label>
+            <input type="password" placeholder="Enter your password" id="Rpwd"><br><br>
+            <input type="submit" value="Register" onclick="submitData()">
+        </form>
+        
+        
+    </center>
+</body>
+</html>

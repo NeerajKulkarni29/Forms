@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<center><title>Application Form</title>
+    <head>
+        <h1>Application Form</h1><hr><br><br>
+        <script>
+            function submitAData(){
+            let Aemail = document.getElementById("Aemail").value;
+            
+            let Apassword = document.getElementById("Apwd").value;
+            localStorage.setItem("AemailKey",Aemail);
+            localStorage.setItem("ApwdKey",Apassword);
+        }
+        </script>
+    </head>
+    <script src="Data.js"></script>
+    <body>
+        <form method="GET" action="Final.html">
+            <input type="text" placeholder="Enter your Name" id="fname" required><br><br>
+            <input type="email" placeholder="Enter your emailid" id="Aemail"required><br><br>
+            <input type="password" placeholder="Enter your password" id="Apwd"required><br><br>
+            <input type="submit" value="Submit" onclick="submitAData()">
+        </form>
+
+        <input type="submit" value="RESET">
+        <form method="GET" action="MyFirst.html">
+            <input type="submit" value="CANCEL">
+        </form>
+        <p>NOTE: Please keep an Alpha numeric password</p>
+    </body>
+</center>
+</html>
